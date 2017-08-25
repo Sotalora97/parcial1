@@ -1,7 +1,7 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
-void ceros(int a, intb, int c);
+void ceros(int a, int b, int c);
 int main()
 {
     ceros(5,2,1);
