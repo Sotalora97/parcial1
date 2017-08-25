@@ -1,0 +1,28 @@
+#include <iostream>
+#include <math.h>
+#define RESPUESTA 0.7736
+using namespace std;
+void puntoFijo();
+int main()
+{
+    puntoFijo();
+    return 0;
+}
+void puntoFijo(){
+    float fxn1=0;
+    float xn=0.0001;
+    float xn1=0;
+    float fxn=0;
+    float xn2=0;
+    float error=(RESPUESTA-xn2)/RESPUESTA;;
+    while(error>=1)
+    {
+        fxn1=(float)(cos(4*xn1-1)+0.5);
+        fxn=(float)(cos(4*xn-1)+0.5);
+        xn2=xn-fxn*((xn-xn1)/(fxn-fxn1));
+        xn1=xn;
+        xn=xn2;
+        error=(RESPUESTA-xn2)/RESPUESTA;
+    }
+    cout<<xn2<<endl;
+}
