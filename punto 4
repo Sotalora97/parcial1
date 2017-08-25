@@ -1,0 +1,28 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+long double poten(int a, int b);
+int facto(int a);
+int main(){
+  int potencia=0;
+  long double result=0;
+  long double respuesta=0;
+  for(int i=0;i<8;i++){
+    respuesta=poten(-5,potencia)/facto(potencia);
+    result+=respuesta;
+    cout<<result*-1<<endl;
+    potencia++;
+  }
+}
+int facto(int a){
+  int b,facto;
+  facto=1;
+  for(b=1;b<=a;b++){
+    facto=b*facto;
+  }
+  return facto;
+}
+long double poten(int a, int b){
+  return pow(a,b);
+}
