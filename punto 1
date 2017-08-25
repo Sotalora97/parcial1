@@ -7,7 +7,7 @@ int main()
     ceros(5,2,1);
     return 0;
 }
-void ceros(int a, intb, int c)
+void ceros(int a, int b, int c)
 {
     float x1,x2=0;
     float raiz=0;
